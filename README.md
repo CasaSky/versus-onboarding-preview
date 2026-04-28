@@ -12,15 +12,43 @@ A small, calm tool that compares anything — searches the web, weighs what you 
 
 The full product is live here: [https://versus-live.up.railway.app/](https://versus-live.up.railway.app/)
 
-This repository lets people inspect and run the public onboarding flow locally:
+This repository lets people inspect and run the public onboarding flow locally. The screenshots below come from the `demo/` folder.
 
-[Onboarding question screen](demo/onboarding-question.svg)
+### 1. Onboarding
 
-![Versus onboarding question screen](demo/onboarding-question.svg)
+[Open onboarding screenshot](demo/1.png)
 
-[Onboarding complete screen](demo/onboarding-complete.svg)
+![Versus onboarding screenshot](demo/1.png)
 
-![Versus onboarding complete screen](demo/onboarding-complete.svg)
+### 2. Search, first step
+
+[Open first search-step screenshot](demo/2.png)
+
+![Versus first search-step screenshot](demo/2.png)
+
+### 3. Results
+
+The results page is split into multiple screenshots.
+
+[Open result screenshot part 1](demo/3-result-part-1.png)
+
+![Versus result screenshot part 1](demo/3-result-part-1.png)
+
+[Open result screenshot part 2](demo/3-result-part-2.png)
+
+![Versus result screenshot part 2](demo/3-result-part-2.png)
+
+[Open result screenshot part 3](demo/3-result-part-3.png)
+
+![Versus result screenshot part 3](demo/3-result-part-3.png)
+
+[Open result screenshot part 4](demo/3-result-part-4.png)
+
+![Versus result screenshot part 4](demo/3-result-part-4.png)
+
+[Open result screenshot part 5](demo/3-result-part-5.png)
+
+![Versus result screenshot part 5](demo/3-result-part-5.png)
 
 ## What this repo is
 
