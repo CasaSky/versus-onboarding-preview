@@ -1,0 +1,37 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="900" fill="#faf8f3"/>
+  <rect y="0" width="1440" height="60" fill="#faf8f3" fill-opacity="0.86"/>
+  <line y1="60.5" x2="1440" y2="60.5" stroke="#e6e0d0"/>
+  <text x="100" y="38" font-family="Georgia, serif" font-size="28" font-style="italic" fill="#1a1814">Versus</text>
+  <text x="184" y="28" font-family="monospace" font-size="10" letter-spacing="2" fill="#b85c2e">V.1</text>
+  <rect x="1238" y="28" width="24" height="4" rx="2" fill="#1a1814"/>
+  <rect x="1268" y="28" width="8" height="4" rx="2" fill="#d9d2c2"/>
+  <rect x="1282" y="28" width="8" height="4" rx="2" fill="#d9d2c2"/>
+  <rect x="1296" y="28" width="8" height="4" rx="2" fill="#d9d2c2"/>
+
+  <text x="340" y="142" font-family="monospace" font-size="13" letter-spacing="2.2" fill="#807a6e">A SHORT CONVERSATION</text>
+  <text x="340" y="188" font-family="Georgia, serif" font-size="25" font-style="italic" fill="#807a6e">Four quick questions. About 20 seconds.</text>
+
+  <text x="340" y="312" font-family="Georgia, serif" font-size="54" fill="#1a1814">What are we comparing today?</text>
+  <rect x="338" y="328" width="3" height="52" fill="#b85c2e"/>
+  <text x="340" y="414" font-family="Inter, Arial, sans-serif" font-size="18" fill="#807a6e">Two things, three, or as many as you'd like.</text>
+
+  <text x="340" y="518" font-family="monospace" font-size="13" letter-spacing="2" fill="#b65a42">● FIRST</text>
+  <line x1="340" y1="590" x2="610" y2="590" stroke="#d9d2c2"/>
+  <text x="340" y="572" font-family="Georgia, serif" font-size="38" font-style="italic" fill="#b8b0a0">Tokyo</text>
+
+  <text x="670" y="566" font-family="monospace" font-size="14" letter-spacing="4" fill="#b8b0a0">VS</text>
+
+  <text x="760" y="518" font-family="monospace" font-size="13" letter-spacing="2" fill="#4b6f98">● SECOND</text>
+  <line x1="760" y1="590" x2="1030" y2="590" stroke="#d9d2c2"/>
+  <text x="760" y="572" font-family="Georgia, serif" font-size="38" font-style="italic" fill="#b8b0a0">Seoul</text>
+
+  <rect x="340" y="664" width="120" height="38" rx="19" stroke="#d9d2c2"/>
+  <text x="365" y="688" font-family="Inter, Arial, sans-serif" font-size="14" fill="#4a463e">＋ Add a third</text>
+
+  <rect x="340" y="780" width="93" height="38" rx="19" stroke="#1a1814"/>
+  <text x="366" y="804" font-family="Inter, Arial, sans-serif" font-size="14" fill="#1a1814">Home</text>
+  <text x="682" y="803" font-family="monospace" font-size="13" letter-spacing="2" fill="#807a6e">1 OF 4</text>
+  <rect x="962" y="770" width="138" height="52" rx="26" fill="#1a1814"/>
+  <text x="994" y="802" font-family="Inter, Arial, sans-serif" font-size="16" fill="#faf8f3">Continue</text>
+</svg>

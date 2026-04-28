@@ -2,9 +2,21 @@
 
 A small, calm tool that compares anything — searches the web, weighs what you actually care about, and tells you which one and why.
 
+**Try the full website:** [versus-live.up.railway.app](https://versus-live.up.railway.app/)
+
 **Public preview:** this repository contains only the onboarding page for Versus.
 
 ---
+
+## Demo
+
+The full product is live here: [https://versus-live.up.railway.app/](https://versus-live.up.railway.app/)
+
+This repository lets people inspect and run the public onboarding flow locally:
+
+![Versus onboarding question screen](demo/onboarding-question.svg)
+
+![Versus onboarding complete screen](demo/onboarding-complete.svg)
 
 ## What this repo is
 
@@ -41,6 +53,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 No install step is required for the preview. React and Babel are loaded from pinned CDN URLs, matching the lightweight structure of the private prototype.
 
+Use `npm start` for this public repo. `npm run dev` belongs to the private/full app because that version includes the API proxy and model-provider environment variables.
+
 ## Files
 
 - `index.html` mounts the public onboarding preview.
@@ -48,6 +62,7 @@ No install step is required for the preview. React and Babel are loaded from pin
 - `data.jsx` contains sample category profiles and priority suggestions.
 - `shared.jsx` contains small shared UI primitives.
 - `styles.css` contains the editorial design system.
+- `demo/` contains lightweight screenshots/previews for GitHub visitors.
 
 ## License
 
