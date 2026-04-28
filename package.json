@@ -1,7 +1,7 @@
 {
   "name": "versus-onboarding-preview",
   "version": "1.0.0",
-  "description": "Public onboarding-page preview for Versus.",
+  "description": "Compare anything, thoughtfully.",
   "type": "module",
   "scripts": {
     "start": "python3 -m http.server 3000"

@@ -1,6 +1,6 @@
 # Versus — Compare Anything, Thoughtfully
 
-A small, calm tool that compares anything, weighs what you actually care about, and turns your context into a clearer decision.
+A small, calm tool that compares anything — searches the web, weighs what you actually care about, and tells you which one and why.
 
 **Public preview:** this repository contains only the onboarding page for Versus.
 
