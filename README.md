@@ -14,7 +14,11 @@ The full product is live here: [https://versus-live.up.railway.app/](https://ver
 
 This repository lets people inspect and run the public onboarding flow locally:
 
+[Onboarding question screen](demo/onboarding-question.svg)
+
 ![Versus onboarding question screen](demo/onboarding-question.svg)
+
+[Onboarding complete screen](demo/onboarding-complete.svg)
 
 ![Versus onboarding complete screen](demo/onboarding-complete.svg)
 
