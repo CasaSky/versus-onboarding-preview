@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Public onboarding preview for Versus, a calm tool for comparing anything thoughtfully." />
+<title>Versus Onboarding Preview</title>
+<link rel="stylesheet" href="styles.css" />
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="data.jsx"></script>
+<script type="text/babel" src="shared.jsx"></script>
+<script type="text/babel" src="onboarding.jsx"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" data-presets="react">
+function PublicApp() {
+  const [completed, setCompleted] = React.useState(null);
+
+  if (completed) {
+    const items = [completed.what.a, completed.what.b, ...(completed.what.extras || [])];
+
+    return (
+      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+        <TopBar onHome={() => setCompleted(null)} />
+        <main className="container fade-up" style={{ maxWidth: 820, padding: '72px 32px' }}>
+          <div className="eyebrow" style={{ marginBottom: 12 }}>Onboarding complete</div>
+          <h1 className="serif" style={{ fontSize: 'clamp(44px, 8vw, 92px)', lineHeight: 0.95, margin: 0 }}>
+            The private app takes it from here.
+          </h1>
+          <p className="lede" style={{ maxWidth: 680, marginTop: 28 }}>
+            This public preview only contains the conversation flow. The private Versus app performs source search,
+            synthesis, scoring, and cited verdict generation after this step.
+          </p>
+
+          <section style={{ marginTop: 44, padding: 24, border: '1px solid var(--rule)', borderRadius: 18, background: 'var(--paper-2)' }}>
+            <div className="mono" style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--ink-3)', marginBottom: 18 }}>
+              Captured comparison context
+            </div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 18 }}>
+              {items.map((item, index) => (
+                <React.Fragment key={item}>
+                  {index > 0 && <span className="mono" style={{ color: 'var(--ink-4)', alignSelf: 'center' }}>vs</span>}
+                  <span className="chip active">{item}</span>
+                </React.Fragment>
+              ))}
+            </div>
+            <p style={{ margin: '0 0 10px', color: 'var(--ink-2)' }}>
+              <strong>Purpose:</strong> {completed.purpose}
+            </p>
+            <p style={{ margin: '0 0 10px', color: 'var(--ink-2)' }}>
+              <strong>Priorities:</strong> {completed.priorities.join(', ')}
+            </p>
+            <p style={{ margin: 0, color: 'var(--ink-2)' }}>
+              <strong>Depth:</strong> {completed.depth}
+            </p>
+          </section>
+
+          <button className="btn" style={{ marginTop: 28 }} onClick={() => setCompleted(null)}>
+            Try another comparison
+          </button>
+        </main>
+      </div>
+    );
+  }
+
+  return (
+    <Onboarding
+      initialQuery=""
+      onComplete={setCompleted}
+      onBack={() => setCompleted(null)}
+    />
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<PublicApp />);
+</script>
+</body>
+</html>
